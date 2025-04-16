@@ -17,6 +17,17 @@ public class SortingCharacters {
 
 
     public String sortString() {
-        return "";
+        String solution = "";
+        String sortThisString = verifyString(this.stringToSort);
+
+        char[] charToSort = sortThisString.toCharArray();
+        for (int j = 97; j < 123; j++){
+            for (int i = 0; i < charToSort.length; i++) {
+                if ((int) charToSort[i] == j) {
+                    solution = solution.concat(String.valueOf(charToSort[i]));
+                }
+            }
+        }
+        return solution;
     }
 }

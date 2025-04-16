@@ -50,4 +50,16 @@ public class SortingCharactersTest {
         Assert.assertEquals(expectedString, actualString);
     }
 
+    @Test
+    public void sortStringTest2(){
+
+        SortingCharacters sc = new SortingCharacters("When not studying nuclear physics, Bambi likes to play\n" +
+                "beach volleyball.");
+        String actualString = sc.sortString();
+
+        String expectedString = "aaaaabbbbcccdeeeeeghhhiiiiklllllllmnnnnooopprsssstttuuvwyyyy";
+
+        Assert.assertEquals(expectedString, actualString);
+    }
+
 }

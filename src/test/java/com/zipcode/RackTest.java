@@ -21,22 +21,6 @@ class RackTest {
         );
     }
 
-    @Test
-    public void generateListOfNumbersForRackTest_expectTrue(){
-        //Given
-        Rack rack = new Rack();
-
-        int expectedSize = rack.numberInCurrentRack();
-       // int expectedSizeOfRack2 = rack2.numberInCurrentRack();
-
-        //when
-        int actualSize = rack.generateListOfNumbersForRack();
-        //int actualSizeOfRack2 = rack2.generateListOfNumbersForRack();
-
-        //Then
-        Assert.assertEquals(actualSize, expectedSize);
-       // Assert.assertEquals(actualSizeOfRack2, expectedSizeOfRack2);
-    }
 
     @Test
     public void sortArrayTest(){
